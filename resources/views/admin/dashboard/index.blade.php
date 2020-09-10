@@ -1,14 +1,9 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <div class="card m-2">
-        <div class="card-header">
-            Featured
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="p-3">
+        <div class="page-header">
+            <h2>Добро пожаловать!</h2>
         </div>
     </div>
 @endsection

@@ -12,16 +12,21 @@
         <script src="{{asset('js/admin.js')}}"></script>
     </head>
 
+
     <body>
         <div class="page-wrapper chiller-theme toggled">
             <!-- sidebar-wrapper  -->
             @if(Auth::check())
+                @include('admin.layouts.top-bar')
                 @include('admin.layouts.left-sidebar')
             @endif
             <!-- page-content" -->
-            <main class="@if(Auth::check()) page-content pt-5 @endif w-100 h-100" id="main">
+            <main class="@if(Auth::check()) page-content @endif w-100 h-100" id="app" style="background-color: #f2f2f2;">
                 @yield('content')
             </main>
         </div>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+        <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>
