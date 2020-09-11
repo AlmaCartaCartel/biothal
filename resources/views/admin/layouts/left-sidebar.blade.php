@@ -30,7 +30,7 @@
         <div class="sidebar-search">
             <div>
                 <div class="input-group">
-                    <input type="text" class="form-control search-menu" placeholder="Search...">
+                    <input type="text" class="form-control search-menu" placeholder="Поиск...">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -60,88 +60,87 @@
                 <li class="sidebar-dropdown">
                     <a href="#">
                         <i class="fa fa-shopping-cart"></i>
-                        <span>E-commerce</span>
+                        <span>Товары</span>
                         <span class="badge badge-pill badge-danger">3</span>
                     </a>
                     <div class="sidebar-submenu">
                         <ul>
-                            <li>
-                                <a href="#">Products
-
+                            <li {{@checkIsActive('admin.products.page')}}>
+                                <a href="{{route('admin.products.page')}}">Добавление
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Orders</a>
+                                <a href="#">Удаление</a>
                             </li>
                             <li>
-                                <a href="#">Credit cart</a>
+                                <a href="#">Редактирование товаров</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="sidebar-dropdown">
-                    <a href="#">
-                        <i class="far fa-gem"></i>
-                        <span>Components</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul>
-                            <li>
-                                <a href="#">General</a>
-                            </li>
-                            <li>
-                                <a href="#">Panels</a>
-                            </li>
-                            <li>
-                                <a href="#">Tables</a>
-                            </li>
-                            <li>
-                                <a href="#">Icons</a>
-                            </li>
-                            <li>
-                                <a href="#">Forms</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="sidebar-dropdown">
-                    <a href="#">
-                        <i class="fa fa-chart-line"></i>
-                        <span>Charts</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul>
-                            <li>
-                                <a href="#">Pie chart</a>
-                            </li>
-                            <li>
-                                <a href="#">Line chart</a>
-                            </li>
-                            <li>
-                                <a href="#">Bar chart</a>
-                            </li>
-                            <li>
-                                <a href="#">Histogram</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="sidebar-dropdown">
-                    <a href="#">
-                        <i class="fa fa-globe"></i>
-                        <span>Maps</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul>
-                            <li>
-                                <a href="#">Google maps</a>
-                            </li>
-                            <li>
-                                <a href="#">Open street map</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+{{--                <li class="sidebar-dropdown">--}}
+{{--                    <a href="#">--}}
+{{--                        <i class="far fa-gem"></i>--}}
+{{--                        <span>Components</span>--}}
+{{--                    </a>--}}
+{{--                    <div class="sidebar-submenu">--}}
+{{--                        <ul>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">General</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Panels</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Tables</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Icons</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Forms</a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+{{--                <li class="sidebar-dropdown">--}}
+{{--                    <a href="#">--}}
+{{--                        <i class="fa fa-chart-line"></i>--}}
+{{--                        <span>Charts</span>--}}
+{{--                    </a>--}}
+{{--                    <div class="sidebar-submenu">--}}
+{{--                        <ul>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Pie chart</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Line chart</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Bar chart</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Histogram</a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+{{--                <li class="sidebar-dropdown">--}}
+{{--                    <a href="#">--}}
+{{--                        <i class="fa fa-globe"></i>--}}
+{{--                        <span>Maps</span>--}}
+{{--                    </a>--}}
+{{--                    <div class="sidebar-submenu">--}}
+{{--                        <ul>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Google maps</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="#">Open street map</a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
             </ul>
         </div>
     </div>

@@ -28,5 +28,11 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
             Route::get('/', 'CategoriesController@index')
                 ->name('admin.categories.page');
         });
+
+        Route::group(['prefix'=>'products'], function (){
+
+            Route::get('/', 'ProductsController@index')
+                ->name('admin.products.page');
+        });
     });
 });

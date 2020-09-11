@@ -1,17 +1,14 @@
 <?php
 
-
 namespace App\Http\Controllers\Admin;
-
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-
-class StatePanelController extends Controller
+class ProductsController extends Controller
 {
     public function index()
     {
-        return view('admin.statePanel.index');
+        return view('admin.products.index');
     }
 }
